@@ -4,6 +4,7 @@ import path from "path";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Gatsby MDX & Netlify Starter`,
+    description: `A Gatsby starter built on mdx, netlify cms, and tailwindcss`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

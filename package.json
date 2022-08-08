@@ -18,9 +18,15 @@
     "proxy": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^1.0.6",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "babel-plugin-macros": "^3.1.0",
     "eslint": "^8.21.0",
     "gatsby": "^4.20.0",
     "gatsby-plugin-google-analytics": "^4.20.0",
@@ -43,11 +49,13 @@
     "sass": "^1.54.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.18.10",
     "@types/mdx-js__react": "^1.5.5",
     "@types/node": "^17.0.45",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.8",
+    "babel-preset-gatsby": "^2.20.0",
     "gatsby-plugin-postcss": "^5.20.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.14",

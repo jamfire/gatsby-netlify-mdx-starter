@@ -21,9 +21,12 @@ interface LayoutProps extends RouteComponentProps {
 const components = Object.assign(
   {},
   {
+    h1: shortcodes.H1,
     h2: shortcodes.H2,
+    h3: shortcodes.H3,
     p: shortcodes.P,
     ul: shortcodes.UL,
+    code: shortcodes.Code,
   },
   shortcodes
 );

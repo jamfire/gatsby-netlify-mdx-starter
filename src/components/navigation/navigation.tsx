@@ -107,7 +107,7 @@ const Navigation = ({ location }: RouteComponentProps) => {
             {/* Mobile menu button */}
             <button
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:bg-gray-100"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => toggleMenu(!menu)}
