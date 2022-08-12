@@ -1,0 +1,87 @@
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+  branch: main
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+
+  - name: pages
+    label: Pages
+    label_singular: Page
+    i18n: true
+    folder: src/pages
+    extension: mdx
+    format: frontmatter
+    identifier_field: slug
+    summary: "{{title}}"
+    create: true
+    fields:
+      - name: title
+        label: Title
+      - name: slug
+        label: slug
+      - name: body
+        label: Content
+        widget: markdown
+      - name: featuredImage
+        label: Featured Image
+        widget: object
+        fields:
+          - name: file
+            label: File
+            widget: image
+            choose_url: false
+            media_folder: .
+            required: false
+          - name: credit
+            label: Credit
+            required: false
+
+  - name: posts
+    label: Posts
+    label_singular: Post
+    i18n: true
+    folder: src/posts
+    extension: mdx
+    format: frontmatter
+    identifier_field: slug
+    summary: "{{title}}"
+    create: true
+    fields:
+      - name: title
+        label: Title
+      - name: slug
+        label: slug
+      - name: body
+        label: Content
+        widget: markdown
+      - name: meta
+        label: Meta Information
+        widget: object
+        fields:
+          - name: date
+            label: date
+            widget: date
+          - name: author
+            label: author
+          - name: description
+            label: Description
+            widget: text
+      - name: featuredImage
+        label: Featured Image
+        widget: object
+        fields:
+          - name: file
+            label: File
+            widget: image
+            choose_url: false
+            media_folder: .
+            required: false
+          - name: credit
+            label: Credit
+            required: false
+
+
